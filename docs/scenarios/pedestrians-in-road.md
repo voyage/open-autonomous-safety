@@ -15,7 +15,7 @@ Ego approaches jaywalking pedestrian on undivided road
 |    |                                    |          |
 | -- | ---------------------------------- | -------- |
 |  A  | ![Jaywalking pedestrian-A](./images/PIR-01-A.png) | **Scenario** <br> Ego approaches pedestrian. Pedestrian stands on side of the road. <br><br> **Expected Result** <br> Ego reduces speed.  |
-|  B  | ![Jaywalking pedestrian-B](./images/PIR-01-B.png) | **Scenario** <br> Pedestrian enters roadway. <br><br> **Expected Result** <br> Ego comes to a stop in front of pedestrian..  |
+|  B  | ![Jaywalking pedestrian-B](./images/PIR-01-B.png) | **Scenario** <br> Pedestrian enters roadway. <br><br> **Expected Result** <br> Ego comes to a stop in front of pedestrian.  |
 |  C  | ![Jaywalking pedestrian-C](./images/PIR-01-C.png) | **Scenario** <br> Pedestrian exits the road. <br><br> **Expected Result** <br> Ego proceeds.  |
 |  D  | ![Jaywalking pedestrian-D](./images/PIR-01-D.png) | **Scenario complete 🎉** |
 
