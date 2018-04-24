@@ -1,0 +1,39 @@
+defaults: &defaults
+  docker:
+    - image: voyage/circleci-node:1.0.0
+
+yarn_install: &yarn_install
+  name: Install node packages
+  command: yarn install
+
+version: 2
+jobs:
+  test:
+    <<: *defaults
+    steps:
+      - checkout
+      - run: *yarn_install
+      - run:
+          name: Test
+          command: yarn test
+  deploy:
+    <<: *defaults
+    steps:
+      - checkout
+      - setup_remote_docker:
+          version: 17.11.0-ce
+          docker_layer_caching: true
+      - run: *yarn_install
+      - run:
+          name: Build and Deploy
+          command: yarn deploy
+
+workflows:
+  version: 2
+  test_deploy:
+    jobs:
+      - test
+      - deploy:
+          filters:
+            branches:
+              only: production

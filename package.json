@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-awspublish": "^3.3.3",
+    "gulp-cloudfront-invalidate-aws-publish": "^1.0.0",
+    "vuepress": "^0.5.1",
+    "yarn": "^1.6.0"
+  },
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "test": "yarn build",
+    "aws-publish": "gulp publish",
+    "deploy": "yarn build && yarn aws-publish"
+  }
+}
