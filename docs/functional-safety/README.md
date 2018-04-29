@@ -85,7 +85,7 @@ The goal with the Functional Requirements flow is to define what the car should 
 3. Detailed Requirements are created from the Functional Requirements, which are more granular and testable.
 
 ## User Narrative
-A high-level, informal story which is used to inform and develop functional rRequirements. User narratives are generally long stories which inform high-level functional requirements.
+A high-level, informal story which is used to inform and develop functional requirements. User narratives are generally long stories which inform high-level functional requirements.
 
 ::: tip Example
 A portion of a user narrative could be "The autonomous vehicle proceeds to its destination, stopping at stop signs and yielding for pedestrians in crosswalks."
