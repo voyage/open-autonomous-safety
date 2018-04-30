@@ -18,62 +18,55 @@ Interventions are grouped into the following categories:
 
 |                    |             |
 | ------------------ |-------------|
-| **Critical** | Disengagement where driver intervention is necessary to prevent a safety-critical situation. [MPMI](#miles-per-critical-intervention-mpci) |
-| **Unsupported** | Disengagement where the driver encounters an unsupported scenario [MPUI](#miles-per-unsupported-intervention-mpui) |
-| **Experience** | Disengagement due to uncomfortable riding experience [MPEI](#miles-per-experience-intervention-mpei) |
-| **Malfunction** | Disengagement caused by a hardware or software error. [MPMI](#miles-per-malfunction-intervention-mpmi)|
+| **Critical** | Disengagement where driver intervention is necessary to prevent a safety-critical or reckless situation. [MPCI](#miles-per-critical-intervention-mpci) |
+| **System Fault** | Disengagement where the vehicle experiences a hardware or software failure and responds appropriately. [MPFI](#miles-per-fault-intervention-mpfi) |
+| **Malfunction** | Disengagement where the vehicle behavior is not working as designed. [MPMI](#miles-per-malfunction-intervention-mpmi)|
+| **Unsupported** | Disengagement where the vehicle encounters a scenario that is not yet supported. [MPUI](#miles-per-unsupported-intervention-mpui) |
+| **Experience** | Disengagement due to uncomfortable riding experience. [MPEI](#miles-per-experience-intervention-mpei) |
 | **Remote** | Intervention from remote vehicle operator. [MPRI](#miles-per-remote-intervention-mpri)|
 
 ## Metrics
 
+We track the average number of miles by different classifications of interventions.
+
 ### Miles Per Intervention (MPI)
-Average number of miles between any class of intervention.
 
 ```js
 MPI = (Total Autonomous Miles) / (Total Interventions)
 ```
 
 ### Miles Per Critical Intervention (MPCI)
-Average number of miles between mandatory interventions.
-
-MPMI quantifies the highest priority disengagements.   
 
 ```js
 MPCI = (Total Autonomous Miles) / (Total Critical Interventions)
 ```
 *Additional Notes: Since drivers disengage early for safety-critical scenarios, any disengagement flagged as such should be re-simulated to determine the outcome of the situation.*
 
-### Miles Per Unsupported Intervention (MPUI)
-Average number of miles between unsupported interventions.
+### Miles Per System Fault Intervention (MPFI)
 
-MPUI quantifies cases in which the vehicle explicitly lacks the capability to continue autonomously.
+```js
+MPFI = (Total Autonomous Miles) / (Total System Fault Interventions)
+```
+
+### Miles Per Malfunction Intervention (MPMI)
+
+```js
+MPMI = (Total Autonomous Miles) / (Total Malfunction Interventions)
+```
+
+### Miles Per Unsupported Intervention (MPUI)
 
 ```js
 MPUI = (Total Autonomous Miles) / (Total Unsupported Interventions)
 ```
 
 ### Miles Per Experience Intervention (MPEI)
-Average number of miles between experience interventions.
-
-MPEI quantifies cases where passenger experience is uncomfortable.  
 
 ```js
 MPEI = (Total Autonomous Miles) / (Total Experience Interventions)
 ```
 
-### Miles Per Malfunction Intervention (MPMI)
-Average number of miles between malfunction interventions.
-
-MPMI quantifies cases where a malfunction occurs.
-
-```js
-MPMI = (Total Autonomous Miles) / (Total Malfunction Interventions)
-```
-
 ### Miles Per Remote Intervention (MPRI)
-Average number of miles between remote interventions.
-
-MPRI quantifies cases where a remote operator intervenes.
 
 ```js
 MPRI = (Total Autonomous Miles) / (Total Remote Interventions)
