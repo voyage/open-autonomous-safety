@@ -71,4 +71,4 @@ Lead vehicle speeds away and breaks speed limit
 | -- | ---------------------------------- | -------- |
 |  A  | ![Vehicle breaks speed limit](./images/CF-06-A.png) | **Scenario** <br> Lead vehicle drives ahead of Ego. <br><br> **Expected Result** <br> Ego follows lead vehicle while maintaining minimum 4 second following distance and never exceeds speed limit.  |
 |  B  | ![Vehicle breaks speed limit](./images/CF-06-B.png) | **Scenario** <br> Lead vehicle accelerates and drives over the speed limit. <br><br> **Expected Result** <br> Ego continues driving but does not surpass speed limit  |
-|  C  | ![Vehicle cut in](./images/CF-04-C.png) | **Scenario complete 🎉** |
+|  C  | ![Vehicle breaks speed limit](./images/CF-06-C.png) | **Scenario complete 🎉** |
