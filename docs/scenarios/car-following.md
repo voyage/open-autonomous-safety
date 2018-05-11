@@ -59,7 +59,7 @@ Lead vehicle cuts out of Ego's lane of travel
 |    |                                    |          |
 | -- | ---------------------------------- | -------- |
 |  A  | ![Vehicle cut out](./images/CF-05-A.png) | **Scenario** <br> Lead vehicle drives ahead of Ego. <br><br> **Expected Result** <br> Ego follows lead vehicle while maintaining minimum 4 second following distance and never exceeds speed limit.  |
-|  B  | ![Vehicle cut out(./images/CF-05-B.png) | **Scenario** <br> Lead vehicle cuts out of Ego's lane of travel. <br><br> **Expected Result** <br> Ego continues traveling in lane of travel.  |
+|  B  | ![Vehicle cut out](./images/CF-05-B.png) | **Scenario** <br> Lead vehicle cuts out of Ego's lane of travel. <br><br> **Expected Result** <br> Ego continues traveling in lane of travel.  |
 |  C  | ![Vehicle cut out](./images/CF-05-C.png) | **Scenario complete 🎉**  |
 
 ## Lead vehicle breaks speed limit
