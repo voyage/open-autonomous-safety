@@ -20,9 +20,19 @@ Scenarios are divided into one or more steps. Each step has an image, scenario d
 
 After the expected result, proceed to next step.
 
+## Parameterization
+
+Simulation allows us to easily parameterize the scenarios, so we can fully test all possibilities of a scenario.
+
+In most of our scenarios, speed and/or distance are parameterized. Ego's speed is variable, actors' speed is variable, and the distance between Ego and actors is variable.
+
+::: tip Example
+For a simple crosswalk scenario (OAS-CW-03), many different scenarios can be executed changing these parameters: 0 < Ego's speed < speed limit, 0 < pedestrian's speed < fastest a human can feasibly run, distance when the pedestrian starts moving relative to Ego. 
+:::
+
 ## Behavioral Competencies
 
-Across the industry, lots of amazing work has already been done in defining standardized behavioral competencies for the safe operation of an AV. A subset of these competencies act as the foundation of OAS and are gathered from various public agencies and industry leaders. 
+Across the industry, lots of amazing work has already been done in defining standardized behavioral competencies for the safe operation of an AV. A subset of these competencies act as the foundation of OAS and are gathered from various public agencies and industry leaders.
 
 Examples of these competencies include:
 
