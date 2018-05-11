@@ -169,3 +169,23 @@ The following are examples on how these various configurations can be put togeth
 | :--: | --- | --- |
 | A    | ![I-04-A](./images/I-04-A.png) | **Scenario** <br> Ego approaches intersection and it is clear. Secondary vehicle approaches from South and stops at intersection. <br><br> **Expected Result** <br> Ego proceeds through the intersection. |
 | B    | ![I-04-B](./images/I-04-B.png) | **Scenario Complete 🎉** |
+
+**Ego Starting Location:** `west`
+
+**Direction:** `straight`
+
+**Roadway:** `3-way`
+
+**Stopping Pattern:** `1-way (south)`
+
+**Secondary Vehicle:** `car`
+
+**Secondary Vehicle Position:** `south` to `west`
+
+**Right of Way:** `Ego has right of way but secondary vehicle is in intersection`
+
+|      |     |     |
+| :--: | --- | --- |
+| A    | ![I-08-A](./images/I-08-A.png) | **Scenario** <br> Ego approaches intersection and secondary vehicle is occupying intersection. <br><br> **Expected Result** <br> Ego stops for secondary vehicle and waits until intersection is clear. |
+| B    | ![I-08-B](./images/I-08-B.png) | **Scenario** <br> Secondary vehicle clears intersection. <br><br> **Expected Result** <br> Ego proceeds through intersection. |
+| B    | ![I-08-C](./images/I-08-C.png) | **Scenario Complete 🎉** |
