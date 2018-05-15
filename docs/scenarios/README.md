@@ -7,7 +7,6 @@ Work In Progress
 # Overview
 This document outlines scenarios that an Autonomous Vehicle (AV) might encounter while operating on public or private roads. Each scenario defines detailed behavioral requirements that must be followed by an AV in order to maintain the highest standard of safety at all times.
 
-
 We divide our scenarios into sections by behavior. These sections enumerate safety critical scenarios that require testing to ensure that an AV can safely navigate.
 
 ## OAS Scenarios
@@ -22,13 +21,9 @@ After the expected result, proceed to next step.
 
 ## Parameterization
 
-Simulation allows us to easily parameterize the scenarios, so we can fully test all possibilities of a scenario.
+Simulation allows us to take a single scenario and change the value of key variables. This allows to quickly produce a comprehensive suite of testing scenarios.
 
-In most of our scenarios, speed and/or distance are parameterized. Ego's speed is variable, actors' speed is variable, and the distance between Ego and actors is variable.
-
-::: tip Example
-For a simple crosswalk scenario (OAS-CW-03), many different scenarios can be executed changing these parameters: 0 < Ego's speed < speed limit, 0 < pedestrian's speed < fastest a human can feasibly run, distance when the pedestrian starts moving relative to Ego. 
-:::
+In most of our scenarios, speed and/or distance of Ego and actors are parameterized.
 
 ## Behavioral Competencies
 
