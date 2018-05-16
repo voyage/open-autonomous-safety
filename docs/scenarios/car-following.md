@@ -9,41 +9,41 @@ Work In Progress
 
 
 ## Follow lead vehicle
-**CF-01**
+**2-2-XX-CF-STR-CAR**
 
 Ego follows lead vehicle that is going **X** speed
 
 |    |                                    |          |
 | -- | ---------------------------------- | -------- |
-|  A  | ![Regular ACC](./images/CF-01-A.png) | **Scenario** <br> Lead vehicle drives ahead of Ego. <br><br> **Expected Result** <br> Ego follows lead vehicle while maintaining minimum 4 second following distance and never exceeds speed limit.  |
+|  A  | ![Regular ACC](./images/CF-01-A.png) | **Scenario** <br> Lead vehicle drives ahead of Ego. <br><br> **Expected Result** <br> Ego follows lead vehicle while maintaining minimum following distance and never exceeds speed limit.  |
 
 
 ## Follow lead vehicle that suddenly stops
-**CF-02**
+**2-2-XX-CF-STR-CAR:01**
 
 Ego follows lead vehicle that is going **X** speed that suddenly stops
 
 |    |                                    |          |
 | -- | ---------------------------------- | -------- |
-|  A  | ![ACC with sudden stop](./images/CF-02-A.png) | **Scenario** <br> Lead vehicle drives ahead of Ego. <br><br> **Expected Result** <br> Ego follows lead vehicle while maintaining minimum 4 second following distance and never exceeds speed limit.  |
+|  A  | ![ACC with sudden stop](./images/CF-02-A.png) | **Scenario** <br> Lead vehicle drives ahead of Ego. <br><br> **Expected Result** <br> Ego follows lead vehicle while maintaining minimum following distance and never exceeds speed limit.  |
 |  B  | ![ACC with sudden stop](./images/CF-02-B.png) | **Scenario** <br> Lead vehicle suddenly comes to a full stop. <br><br> **Expected Result** <br> Ego stops behind lead vehicle.  |
 |  C  | ![ACC with sudden stop](./images/CF-02-C.png) | **Scenario complete 🎉**  |
 
 
 ## Follow lead vehicle that is stopping and going
-**CF-03**
+**2-2-XX-CF-STR-CAR:02**
 
 Ego follows lead vehicle that is stopping and going
 
 |    |                                    |          |
 | -- | ---------------------------------- | -------- |
-|  A  | ![ACC with stopping and going](./images/CF-03-A.png) | **Scenario** <br> Lead vehicle drives ahead of Ego. <br><br> **Expected Result** <br> Ego follows lead vehicle while maintaining minimum 4 second following distance and never exceeds speed limit.  |
+|  A  | ![ACC with stopping and going](./images/CF-03-A.png) | **Scenario** <br> Lead vehicle drives ahead of Ego. <br><br> **Expected Result** <br> Ego follows lead vehicle while maintaining minimum following distance and never exceeds speed limit.  |
 |  B  | ![ACC with stopping and going](./images/CF-03-B.png) | **Scenario** <br> Lead vehicle comes to a stop. <br><br> **Expected Result** <br> Ego stops behind lead vehicle.  |
 |  C  | ![ACC with stopping and going](./images/CF-03-C.png) | **Scenario** <br> Lead vehicle starts driving again, stopping and going periodically. <br><br> **Expected Result** <br> Ego follows lead vehicle while maintaining minimum 4 second following distance, never exceeds speed limit (even if the lead vehicle does,) and stops behind lead vehicle.  |
 
 
 ## Lead vehicle cuts in
-**CF-04**
+**2-2-XX-CF-STR-CAR:Pa>E:03**
 
 A secondary vehicle cuts in ahead of Ego
 
@@ -54,7 +54,7 @@ A secondary vehicle cuts in ahead of Ego
 
 
 ## Lead vehicle cuts out
-**CF-05**
+**2-2-XX-CF-STR-CAR:E>Pa:04**
 
 Lead vehicle cuts out of Ego's lane of travel
 
@@ -66,7 +66,7 @@ Lead vehicle cuts out of Ego's lane of travel
 
 
 ## Lead vehicle breaks speed limit
-**CF-06**
+**2-2-XX-CF-STR-CAR:05**
 
 Lead vehicle speeds away and breaks speed limit
 
