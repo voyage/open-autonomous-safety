@@ -1,24 +1,12 @@
 # Intersections
 
-:::warning Alpha
+:::warning ALPHA
 Work In Progress
 :::
 
 [[toc]]
 
-## Configurations
-There are many combinations of intersection scenarios.
-
- - ego starting location: `[west] //ego always starts on the west`
- - ego direction: `[straight, left, right]`
- - roadway type: `[3-way, 4-way, other road configurations]`
- - stopping pattern: `[1-way (north/south/east/west), 2-way (north/south/east/west), 3-way (north/south/east/west), 4-way (north/south/east/west), other]`
- - secondary vehicle(s): `[none, bus, car, golf cart, motorcycle, bicycle]`
- - secondary vehicle(s) starting position: `[n/a, north, east, south, west]`
- - secondary vehicle(s) ending position: `[n/a, north, east, south, west]`
- - right of way: `[n/a, secondary has right of way, Ego has right of way, Ego has right of way but secondary takes it (misbehaves), more vehicles or more complex scenarios]`
-
-The following are examples on how these various configurations can be put together and modeled, with the expectation that all combinations will be detailed as this project continues.
+There are many combinations of intersection scenarios, and the expectation is that all combinations will be detailed as this project continues.
 
 ## 4-Way controlled intersection with no other vehicles
 **4-2-NESW-I-STR-XX**

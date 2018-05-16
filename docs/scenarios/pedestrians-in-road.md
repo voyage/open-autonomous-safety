@@ -1,6 +1,6 @@
 # Pedestrians in Road
 
-:::warning Alpha
+:::warning ALPHA
 Work In Progress
 :::
 
@@ -8,7 +8,7 @@ Work In Progress
 
 
 ## Jaywalking pedestrian
-**OAS-PIR-01**
+**2-2-XX-PIR-STR-PED:N>S**
 
 Ego approaches jaywalking pedestrian on undivided road
 
@@ -21,7 +21,7 @@ Ego approaches jaywalking pedestrian on undivided road
 
 
 ## Jaywalking pedestrian on divided road
-**OAS-PIR-02**
+**2-2M-XX-PIR-STR-PED:N>S:02**
 
 Ego approaches jaywalking pedestrian on divided road that hasn't entered Ego lane of travel
 
@@ -31,7 +31,7 @@ Ego approaches jaywalking pedestrian on divided road that hasn't entered Ego lan
 |  B  | ![Jaywalking pedestrian divided road left-B](./images/PIR-02-B.png) | **Scenario** <br> Pedestrian continues crossing but has not reached the median or divider of the road. <br><br> **Expected Result** <br> Ego proceeds.  |
 |  C  | ![Jaywalking pedestrian divided road left-C](./images/PIR-02-C.png) | **Scenario complete 🎉** |
 
-**OAS-PIR-03**
+**2-2M-XX-PIR-STR-PED:N>S:01**
 
 Ego approaches jaywalking pedestrian on divided road that has entered Ego lane of travel
 

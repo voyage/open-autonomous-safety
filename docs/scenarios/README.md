@@ -19,6 +19,39 @@ Scenarios are divided into one or more steps. Each step has an image, scenario d
 
 After the expected result, proceed to next step.
 
+## Scenario IDs
+
+Every scenario is assigned a unique ID.
+
+**`road segments`-`lanes`-`stop signs`-`scenario category`-`Ego action`-`other actors`**
+
+:::tip Example
+`2-2-XX-CW-STR-PED:N>S:01`
+:::
+
+* **road segments:** The # of road segments (arms)
+<br>2-way `2`, 3-way `3`, 4-way `4`, n/a `XX`, etc
+
+* **\# of lanes:** The # of total lanes and if there's a median/island
+<br>`1`, `2`, `3`, `4`, 2 lanes + median `2M`, 4 lanes + median `4M`, 1 lane + island in center `1I` etc
+
+* **stop signs:** Based on a bird's eye view of the scenario, where are the stop signs.
+<br>North `N`, East `E`, South `S`, West `W`, none `XX`, etc
+
+* **scenario category:** The high-level category
+<br>Car following `CF`, crosswalks `CW`, cul-de-sacs `CDS`, intersections `I`, pedestrians in road `PIR`, reversing vehicles `RV`, speed limits `SL`, vehicles in roadway `VR`, etc
+
+* **Ego action:** What Ego will be doing in the scenario
+<br>Straight `STR`, left `L`, right `R`, u-turn `U`, etc
+
+* **other actors:** The other actors in the scenario: actors' starting > ending positions (if applicable): actor actions (if applicable)
+<br>`actor:start>end:action`  
+<br>**actor:** Car `CAR`, bus `BUS`, bicycle `BIKE`, motorcycle `M`, golf cart `GC`, pedestrian `PED`, etc <br>
+**positions:** North `N`, East `E`, South `S`, West `W`, static in lane `St`, double parked `DP`, parked on roadside `Pa`, driveway `Dr`, etc <br>
+**action:** `01`, `02`, `03`, etc. These "action" options are only used if the actor's action is out of the ordinary or isn't obvious, and they do not carry over between scenario categories. For example, 01 for the CF scenarios (sudden stop of a lead vehicle) translates to a different action than 01 for the I scenarios (Ego has right of way at stop sign).
+
+Other ID options will be added as scenarios are added.
+
 ## Parameterization
 
 Simulation allows us to take a single scenario and change the value of key variables. This allows to quickly produce a comprehensive suite of testing scenarios.

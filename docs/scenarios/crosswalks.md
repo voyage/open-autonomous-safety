@@ -98,7 +98,7 @@ Ego approaches crosswalk on a divided road, and a pedestrian approaches from the
 
 
 ## At multi-way stop
-**4-2-NESW-CW-R-PED:SE>SW:01**
+**4-2-NESW-CW-R-PED:SE>SW**
 
 Ego approaches crosswalk at a 4 way stop and pedestrian is crossing in lane of travel
 
@@ -108,7 +108,7 @@ Ego approaches crosswalk at a 4 way stop and pedestrian is crossing in lane of t
 |  B  | ![4 way stop and pedestrian in lane-B](./images/CW-09-B.png) | **Scenario** <br> Pedestrian exits crosswalk. <br><br> **Expected Result** <br> Ego proceeds
 |  C  | ![4 way stop and pedestrian in lane-C](./images/CW-09-C.png) | **Scenario complete 🎉**  |
 
-**4-2-NESW-CW-STR-PED:SE>SW:02**
+**4-2-NESW-CW-STR-PED:SE>SW**
 
 Ego approaches crosswalk at a 4 way stop and pedestrian is not crossing in lane of travel
 
@@ -118,7 +118,7 @@ Ego approaches crosswalk at a 4 way stop and pedestrian is not crossing in lane 
 |  B  | ![4 way stop and pedestrian not in lane-B](./images/CW-10-B.png) | **Scenario** <br> Pedestrian travels into a crosswalk that does not lie over a road in which Ego intends to proceed. <br><br> **Expected Result** <br> Ego proceeds after a few seconds
 |  C  | ![4 way stop and pedestrian not in lane-C](./images/CW-10-C.png) | **Scenario complete 🎉** |
 
-**3-2-NSW-CW-R-PED:NW>SW:01**
+**3-2-NSW-CW-R-PED:NW>SW**
 
 Ego approaches crosswalk at a 3 way stop and pedestrian is crossing in lane of travel
 
@@ -128,7 +128,7 @@ Ego approaches crosswalk at a 3 way stop and pedestrian is crossing in lane of t
 |  B  | ![3 way stop and pedestrian in lane-B](./images/CW-11-B.png) | **Scenario** <br> Pedestrian exits crosswalk. <br><br> **Expected Result** <br> Ego waits until the pedestrian is physically clear of the crosswalk and then proceeds.  |
 |  C  | ![3 way stop and pedestrian in lane-C](./images/CW-11-C.png) | **Scenario complete 🎉** |
 
-**3-2-NSW-CW-R-PED:NW>NE:02**
+**3-2-NSW-CW-R-PED:NW>NE**
 
 Ego approaches crosswalk at a 3 way stop and pedestrian is not crossing in lane of travel
 
