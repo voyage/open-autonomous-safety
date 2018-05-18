@@ -49,7 +49,7 @@ A secondary vehicle cuts in ahead of Ego
 
 |    |                                    |          |
 | -- | ---------------------------------- | -------- |
-|  A  | ![Vehicle cut in](./images/CF-04-A.png) | **Scenario** <br> Secondary vehicle cuts in ahead of Ego inside the safe following distance. <br><br> **Expected Result** <br> Ego slows down and then follows lead vehicle.  |
+|  A  | ![Vehicle cut in](./images/CF-04-A.png) | **Scenario** <br> Secondary vehicle cuts in ahead of Ego inside the safe following distance. <br><br> **Expected Result** <br> Ego slows down and follows lead vehicle.  |
 |  B  | ![Vehicle cut in](./images/CF-04-B.png) | **Scenario complete 🎉**  |
 
 

@@ -125,7 +125,7 @@ Ego approaches crosswalk at a 3 way stop and pedestrian is crossing in lane of t
 |    |                                    |          |
 | -- | ---------------------------------- | -------- |
 |  A  | ![3 way stop and pedestrian in lane-A](./images/CW-11-A.png) | **Scenario** <br> Ego approaches a 3 way stop. Pedestrian is waiting to cross a crosswalk that intersects with Ego's path of travel. <br><br> **Expected Result** <br> Ego uses turn signal if appropriate and comes to a stop behind the crosswalk and remains stopped.  |
-|  B  | ![3 way stop and pedestrian in lane-B](./images/CW-11-B.png) | **Scenario** <br> Pedestrian exits crosswalk. <br><br> **Expected Result** <br> Ego waits until the pedestrian is physically clear of the crosswalk and then proceeds.  |
+|  B  | ![3 way stop and pedestrian in lane-B](./images/CW-11-B.png) | **Scenario** <br> Pedestrian exits crosswalk. <br><br> **Expected Result** <br> Ego waits until the pedestrian is physically clear of the crosswalk and proceeds.  |
 |  C  | ![3 way stop and pedestrian in lane-C](./images/CW-11-C.png) | **Scenario complete 🎉** |
 
 **3-2-NSW-CW-R-PED:NW>NE**

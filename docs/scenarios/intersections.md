@@ -51,7 +51,7 @@ There are many combinations of intersection scenarios, and the expectation is th
 | :--: | --- | --- |
 | A    | ![I-07-A](./images/I-07-A.png) | **Scenario** <br> Ego stops at the intersection. Secondary vehicle approaches from South but hasn't reached stop line yet. <br><br> **Expected Result** <br> Ego begins to proceed through the intersection. |
 | B    | ![I-07-B](./images/I-07-B.png) | **Scenario** <br> Secondary vehicle does not stop and starts to proceed through intersection. <br><br> **Expected Result** <br> Ego stops to yield to misbehaving secondary vehicle. |
-| C    | ![I-07-C](./images/I-07-C.png) | **Scenario** <br> Secondary vehicle continues through intersection. <br><br> **Expected Result** <br> Ego remains stopped until secondary vehicle is out of intersection and then proceeds. |
+| C    | ![I-07-C](./images/I-07-C.png) | **Scenario** <br> Secondary vehicle continues through intersection. <br><br> **Expected Result** <br> Ego remains stopped until secondary vehicle is out of intersection and proceeds. |
 | D    | ![I-07-D](./images/I-07-D.png) | **Scenario Complete 🎉** |
 
 

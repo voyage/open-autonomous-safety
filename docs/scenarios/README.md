@@ -47,7 +47,7 @@ Every scenario is assigned a unique ID.
 * **other actors:** The other actors in the scenario: actors' starting > ending positions (if applicable): actor actions (if applicable)
 <br>`actor:start>end:action`  
 <br>**actor:** Car `CAR`, bus `BUS`, bicycle `BIKE`, motorcycle `M`, golf cart `GC`, pedestrian `PED`, etc <br>
-**positions:** North `N`, East `E`, South `S`, West `W`, static in lane `St`, double parked `DP`, parked on roadside `Pa`, driveway `Dr`, etc <br>
+**start/end positions:** North `N`, East `E`, South `S`, West `W`, static in lane `St`, double parked `DP`, parked on roadside `Pa`, driveway `Dr`, etc <br>
 **action:** `01`, `02`, `03`, etc. These "action" options are only used if the actor's action is out of the ordinary or isn't obvious, and they do not carry over between scenario categories. For example, 01 for the CF scenarios (sudden stop of a lead vehicle) translates to a different action than 01 for the I scenarios (Ego has right of way at stop sign).
 
 Other ID options will be added as scenarios are added.
