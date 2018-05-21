@@ -7,7 +7,7 @@ Work In Progress
 # Overview
 This document outlines scenarios that an Autonomous Vehicle (AV) might encounter while operating on public or private roads. Each scenario defines detailed behavioral requirements that must be followed by an AV in order to maintain the highest standard of safety at all times.
 
-We divide our scenarios into sections by behavior. These sections enumerate safety critical scenarios that require testing to ensure that an AV can safely navigate.
+We divide our scenarios into behavioral sections. These sections enumerate safety critical scenarios that require testing to ensure that an AV can safely navigate its surrounding environment.
 
 ## OAS Scenarios
 
@@ -44,7 +44,7 @@ Every scenario is assigned a unique ID.
 * **Ego action:** What Ego will be doing in the scenario
 <br>Straight `STR`, left `L`, right `R`, u-turn `U`, etc
 
-* **other actors:** The other actors in the scenario: actors' starting > ending positions (if applicable): actor actions (if applicable)
+* **other actors:** The other actors in the scenario: actor's starting > ending positions (if applicable): actor actions (if applicable)
 <br>`actor:start>end:action`  
 <br>**actor:** Car `CAR`, bus `BUS`, bicycle `BIKE`, motorcycle `M`, golf cart `GC`, pedestrian `PED`, etc <br>
 **start/end positions:** North `N`, East `E`, South `S`, West `W`, static in lane `St`, double parked `DP`, parked on roadside `Pa`, driveway `Dr`, etc <br>
