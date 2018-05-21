@@ -60,7 +60,7 @@ In most of our scenarios, speed and/or distance of Ego and actors are parameteri
 
 ## Behavioral Competencies
 
-Across the industry, lots of amazing work has already been done in defining standardized behavioral competencies for the safe operation of an AV. A subset of these competencies act as the foundation of OAS and are gathered from various public agencies and industry leaders.
+Across the industry, amazing work has already been done in defining standardized behavioral competencies for the safe operation of an AV. A subset of these competencies act as the foundation of OAS and are gathered from various public agencies and industry leaders.
 
 Examples of these competencies include:
 
