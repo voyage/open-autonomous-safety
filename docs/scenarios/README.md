@@ -5,7 +5,7 @@ Work In Progress
 :::
 
 # Overview
-This document outlines scenarios that an Autonomous Vehicle (AV) might encounter while operating on public or private roads. Each scenario defines detailed behavioral requirements that must be followed by an AV in order to maintain the highest standard of safety at all times.
+This document outlines scenarios that an Autonomous Vehicle (AV) might encounter while operating on public or private roads. Each scenario defines detailed behavioral requirements that must be followed by an AV in order to maintain the highest standard of safety at all times. Here at Voyage, we refer to our Autonomous vehicle as the "Ego" vehicle.
 
 We divide our scenarios into behavioral sections. These sections enumerate safety critical scenarios that require testing to ensure that an AV can safely navigate its surrounding environment.
 
