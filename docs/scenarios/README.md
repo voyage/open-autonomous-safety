@@ -44,11 +44,12 @@ Every scenario is assigned a unique ID.
 * **Ego action:** What Ego will be doing in the scenario
 <br>Straight `STR`, left `L`, right `R`, u-turn `U`, etc
 
-* **other actors:** The other actors in the scenario: actor's starting > ending positions (if applicable): actor actions (if applicable)
-<br>`actor:start>end:action`  
-<br>**actor:** Car `CAR`, bus `BUS`, bicycle `BIKE`, motorcycle `M`, golf cart `GC`, pedestrian `PED`, etc <br>
+* **other actors:** The other actors in the scenario: actor's starting > ending positions (if applicable): actor actions (if applicable).
+<br>`actor:start>end:action`
+<br>There can be multiple actors in a scenario, and if that is the case, additional actors will be added to the end of the scenario ID. The sort order of actors (if applicable) is determined by the order that Ego encounters the actors.  
+<br>**actor:** car `CAR`, bus `BUS`, bicycle `BIKE`, motorcycle `M`, golf cart `GC`, pedestrian `PED`, none `XX`, etc <br>
 **start/end positions:** North `N`, East `E`, South `S`, West `W`, static in lane `St`, double parked `DP`, parked on roadside `Pa`, driveway `Dr`, etc <br>
-**action:** `01`, `02`, `03`, etc. These "action" options are only used if the actor's action is out of the ordinary or isn't obvious, and they do not carry over between scenario categories. For example, 01 for the CF scenarios (sudden stop of a lead vehicle) translates to a different action than 01 for the I scenarios (Ego has right of way at stop sign).
+**action:** `01`, `02`, `03`, etc. These "action" options are only used if the actor's action is out of the ordinary or isn't obvious, and they do not carry over between scenario categories. For example, 01 for the CF scenarios (sudden stop of a lead vehicle) translates to a different action than 01 for the I scenarios (Ego has right of way at stop sign). The action IDs key will be at the top of each scenario category page.
 
 Other ID options will be added as scenarios are added.
 

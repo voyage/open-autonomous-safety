@@ -6,6 +6,10 @@ Work In Progress
 
 [[toc]]
 
+:::tip Action IDs
+**01**: Door open
+:::
+
 ## Stationary vehicle
 **2-2-XX-VR-STR-CAR:DP**
 

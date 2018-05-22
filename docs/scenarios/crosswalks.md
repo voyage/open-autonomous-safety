@@ -7,6 +7,11 @@ Work In Progress
 
 [[toc]]
 
+:::tip Action IDs
+**01**: Actor's path will intersect with Ego's crosswalk <br>
+**02**: Actor's path will not intersect with Ego's crosswalk <br>
+**03**: Static actor in crosswalk
+:::
 
 ## Without pedestrian
 **2-2-XX-CW-STR-XX**

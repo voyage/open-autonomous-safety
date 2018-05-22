@@ -8,6 +8,13 @@ Work In Progress
 
 There are many combinations of intersection scenarios, and the expectation is that all combinations will be detailed as this project continues.
 
+:::tip Action IDs
+**01**: Ego has right of way <br>
+**02**: Actor has right of way <br>
+**03**: Ego has right of way, but actor takes it <br>
+**04**: Ego has right of way, but actor is blocking right of way
+:::
+
 ## 4-Way controlled intersection with no other vehicles
 **4-2-NESW-I-STR-XX**
 

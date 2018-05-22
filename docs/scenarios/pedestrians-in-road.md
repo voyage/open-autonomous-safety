@@ -6,6 +6,10 @@ Work In Progress
 
 [[toc]]
 
+:::tip Action IDs
+**01**: Actor's path will intersect with Ego's path <br>
+**02**: Actor's path will not intersect with Ego's path
+:::
 
 ## Jaywalking pedestrian
 **2-2-XX-PIR-STR-PED:N>S**

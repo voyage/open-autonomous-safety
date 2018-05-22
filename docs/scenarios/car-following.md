@@ -7,6 +7,13 @@ Work In Progress
 
 [[toc]]
 
+:::tip Action IDs
+**01**: Sudden stop <br>
+**02**: Stop and go <br>
+**03**: Actor cuts in <br>
+**04**: Actor cuts out <br>
+**05**: Breaks speed limit
+:::
 
 ## Follow lead vehicle
 **2-2-XX-CF-STR-CAR**
