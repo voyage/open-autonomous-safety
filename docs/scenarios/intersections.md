@@ -1,40 +1,22 @@
 # Intersections
 
-:::warning Alpha
+:::warning ALPHA
 Work In Progress
 :::
 
 [[toc]]
 
-## Configurations
-There are many combinations of intersection scenarios.
+There are many combinations of intersection scenarios, and the expectation is that all combinations will be detailed as this project continues.
 
- - ego starting location: `[west] //ego always starts on the west` 
- - ego direction: `[straight, left, right]`
- - roadway type: `[3-way stop, 4-way stop, other road configurations]`
- - stopping pattern: `[1-way stop, 2-way stop, 3-way stop, 4-way stop, other]`
- - secondary vehicle(s): `[none, bus, car, golf cart, motorcycle, bicycle]`
- - secondary vehicle(s) starting position: `[n/a, north, east, south, west]`
- - secondary vehicle(s) ending position: `[n/a, north, east, south, west]`
- - right of way: `[n/a, secondary has right of way, Ego has right of way, Ego has right of way but secondary takes it (misbehaves), more vehicles or more complex scenarios]`
- 
-The following are examples on how these various configurations can be put together and modeled, with the expectation that all combinations will be detailed as this project continues.
+:::tip Action IDs
+**01**: Ego has right of way <br>
+**02**: Actor has right of way <br>
+**03**: Ego has right of way, but actor takes it <br>
+**04**: Ego has right of way, but actor is blocking right of way
+:::
 
 ## 4-Way controlled intersection with no other vehicles
-
-**Ego Starting Location:** `west`
-
-**Direction:** `straight`
-
-**Roadway:** `4-way stop`
-
-**Stopping Pattern:** `4-way stop`
-
-**Secondary Vehicle:** `none`
-
-**Secondary Vehicle Position:** `n/a`
-
-**Right of Way:** `n/a`
+**4-2-NESW-I-STR-XX**
 
 |      |     |     |
 | :--: | --- | --- |
@@ -44,43 +26,44 @@ The following are examples on how these various configurations can be put togeth
 
 
 ## 3-Way controlled intersection with another vehicle
-
-**Ego Starting Location:** `west`
-
-**Direction:** `straight`
-
-**Roadway:** `3-way stop`
-
-**Stopping Pattern:** `3-way stop`
-
-**Secondary Vehicle:** `car`
-
-**Secondary Vehicle Position:** `south` to `west`
-
-**Right of Way:** `secondary has right of way`
+**3-2-ESW-I-STR-CAR:S>W:02**
 
 |      |     |     |
 | :--: | --- | --- |
 | A    | ![I-02-A](./images/I-02-A.png) | **Scenario** <br> Ego approaches the intersection. Secondary vehicle approaches from South and stops. <br><br> **Expected Result** <br> Ego comes to a stop in front of the stopline. |
-| B    | ![I-02-B](./images/I-02-B.png) | **Scenario** <br> Secondary vehicle turns left <br><br> **Expected Result** <br> Ego remains stopped. |:
+| B    | ![I-02-B](./images/I-02-B.png) | **Scenario** <br> Secondary vehicle turns left <br><br> **Expected Result** <br> Ego remains stopped. |
 | C    | ![I-02-C](./images/I-02-C.png) | **Scenario** <br> Secondary vehicle clears the intersection. <br><br> **Expected Result** <br> Ego proceeds through the intersection. |
 | D    | ![I-02-D](./images/I-02-D.png) | **Scenario Complete 🎉** |
 
+**3-2-NSW-I-L-CAR:S>W:02**
+
+|      |     |     |
+| :--: | --- | --- |
+| A    | ![I-05-A](./images/I-05-A.png) | **Scenario** <br> Ego approaches the intersection. Secondary vehicle approaches from South and stops first. <br><br> **Expected Result** <br> Ego comes to a stop in front of the stopline. |
+| B    | ![I-05-B](./images/I-05-B.png) | **Scenario** <br> Secondary vehicle turns left <br><br> **Expected Result** <br> Ego remains stopped. |
+| C    | ![I-05-C](./images/I-05-C.png) | **Scenario** <br> Secondary vehicle clears the intersection. <br><br> **Expected Result** <br> Ego proceeds through the intersection. |
+| D    | ![I-05-D](./images/I-05-D.png) | **Scenario Complete 🎉** |
+
+**3-2-NSW-I-L-CAR:S>W:01**
+
+|      |     |     |
+| :--: | --- | --- |
+| A    | ![I-06-A](./images/I-06-A.png) | **Scenario** <br> Ego stops at the intersection. Secondary vehicle approaches from South but hasn't reached stop line yet. <br><br> **Expected Result** <br> Ego begins to proceed through the intersection. |
+| B    | ![I-06-B](./images/I-06-B.png) | **Scenario** <br> Secondary vehicle waits at the stop line. <br><br> **Expected Result** <br> Ego continues through intersection. |
+| C    | ![I-06-C](./images/I-06-C.png) | **Scenario Complete 🎉** |
+
+**3-2-NSW-I-L-CAR:S>N:03**
+
+|      |     |     |
+| :--: | --- | --- |
+| A    | ![I-07-A](./images/I-07-A.png) | **Scenario** <br> Ego stops at the intersection. Secondary vehicle approaches from South but hasn't reached stop line yet. <br><br> **Expected Result** <br> Ego begins to proceed through the intersection. |
+| B    | ![I-07-B](./images/I-07-B.png) | **Scenario** <br> Secondary vehicle does not stop and starts to proceed through intersection. <br><br> **Expected Result** <br> Ego stops to yield to misbehaving secondary vehicle. |
+| C    | ![I-07-C](./images/I-07-C.png) | **Scenario** <br> Secondary vehicle continues through intersection. <br><br> **Expected Result** <br> Ego remains stopped until secondary vehicle is out of intersection and proceeds. |
+| D    | ![I-07-D](./images/I-07-D.png) | **Scenario Complete 🎉** |
+
+
 ## 3-Way uncontrolled intersection with another vehicle
-
-**Ego Starting Location:** `west`
-
-**Direction:** `left`
-
-**Roadway:** `3-way stop`
-
-**Stopping Pattern:** `1-way stop`
-
-**Secondary Vehicle:** `car`
-
-**Secondary Vehicle Position:** `north` to `south`
-
-**Right of Way:** `secondary has right of way`
+**3-2-W-I-L-CAR:N>S**
 
 |      |     |     |
 | :--: | --- | --- |
@@ -89,3 +72,17 @@ The following are examples on how these various configurations can be put togeth
 | C    | ![I-03-C](./images/I-03-C.png) | **Scenario** <br> Secondary vehicle clears the intersection. <br><br> **Expected Result** <br> Ego proceeds through the intersection (turns left). |
 | D    | ![I-03-D](./images/I-03-D.png) | **Scenario Complete 🎉** |
 
+**3-2-S-I-STR-CAR:S>W**
+
+|      |     |     |
+| :--: | --- | --- |
+| A    | ![I-04-A](./images/I-04-A.png) | **Scenario** <br> Ego approaches intersection and it is clear. Secondary vehicle approaches from South and stops at intersection. <br><br> **Expected Result** <br> Ego proceeds through the intersection. |
+| B    | ![I-04-B](./images/I-04-B.png) | **Scenario Complete 🎉** |
+
+**3-2-S-I-STR-CAR:S>W:04**
+
+|      |     |     |
+| :--: | --- | --- |
+| A    | ![I-08-A](./images/I-08-A.png) | **Scenario** <br> Ego approaches intersection and secondary vehicle is occupying intersection. <br><br> **Expected Result** <br> Ego stops for secondary vehicle and waits until intersection is clear. |
+| B    | ![I-08-B](./images/I-08-B.png) | **Scenario** <br> Secondary vehicle clears intersection. <br><br> **Expected Result** <br> Ego proceeds through intersection. |
+| B    | ![I-08-C](./images/I-08-C.png) | **Scenario Complete 🎉** |

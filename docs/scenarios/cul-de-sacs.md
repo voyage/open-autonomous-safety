@@ -6,8 +6,12 @@ Work In Progress
 
 [[toc]]
 
+:::tip Action IDs
+None currently
+:::
+
 ## Cul-de-sac
-**OAS-CDS-01**
+**XX-1-XX-CDS-STR-XX**
 
 Ego approaches cul-de-sac
 
@@ -16,7 +20,7 @@ Ego approaches cul-de-sac
 | A    | ![CDS-01](./images/CDS-01.png) | **Scenario** <br> Ego approaches a cul-de-sac. <br><br> **Expected Result** <br> Ego reduces speed by 20 percent, enters the cul-de-sac from the right hand portion of the road, and proceeds counterclockwise. |
 
 ## Raised island
-**OAS-CDS-02**
+**XX-1I-XX-CDS-STR-XX**
 
 Ego approaches cul-de-sac with an island at its center
 
@@ -25,7 +29,7 @@ Ego approaches cul-de-sac with an island at its center
 | A    | ![CDS-02](./images/CDS-02.png) | **Scenario** <br> Ego approaches cul-de-sac with an island. <br><br> **Expected Result** <br> Ego reduces speed by 20 percent, enters the cul-de-sac from the right hand portion of the road, and proceeds counterclockwise. |
 
 ## With pedestrian or object
-**OAS-CDS-03**
+**XX-1-XX-CDS-STR-PED:St**
 
 Ego approaches cul-de-sac with pedestrian in roadway
 

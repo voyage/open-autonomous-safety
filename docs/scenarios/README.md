@@ -5,10 +5,9 @@ Work In Progress
 :::
 
 # Overview
-This document outlines scenarios that an Autonomous Vehicle (AV) might encounter while operating on public or private roads. Each scenario defines detailed behavioral requirements that must be followed by an AV in order to maintain the highest standard of safety at all times.
+This document outlines scenarios that an Autonomous Vehicle (AV) might encounter while operating on public or private roads. Each scenario defines detailed behavioral requirements that must be followed by an AV in order to maintain the highest standard of safety at all times. Here at Voyage, we refer to our Autonomous vehicle as the "Ego" vehicle.
 
-
-We divide our scenarios into sections by behavior. These sections enumerate safety critical scenarios that require testing to ensure that an AV can safely navigate.
+We divide our scenarios into behavioral sections. These sections enumerate safety critical scenarios that require testing to ensure that an AV can safely navigate its surrounding environment.
 
 ## OAS Scenarios
 
@@ -20,9 +19,49 @@ Scenarios are divided into one or more steps. Each step has an image, scenario d
 
 After the expected result, proceed to next step.
 
+## Scenario IDs
+
+Every scenario is assigned a unique ID.
+
+**`road segments`-`lanes`-`stop signs`-`scenario category`-`Ego action`-`other actors`**
+
+:::tip Example
+`2-2-XX-CW-STR-PED:N>S:01`
+:::
+
+* **road segments:** The # of road segments (arms)
+<br>2-way `2`, 3-way `3`, 4-way `4`, n/a `XX`, etc
+
+* **\# of lanes:** The # of total lanes and if there's a median/island
+<br>`1`, `2`, `3`, `4`, 2 lanes + median `2M`, 4 lanes + median `4M`, 1 lane + island in center `1I` etc
+
+* **stop signs:** Based on a bird's eye view of the scenario, where are the stop signs.
+<br>North `N`, East `E`, South `S`, West `W`, none `XX`, etc
+
+* **scenario category:** The high-level category
+<br>Car following `CF`, crosswalks `CW`, cul-de-sacs `CDS`, intersections `I`, pedestrians in road `PIR`, reversing vehicles `RV`, speed limits `SL`, vehicles in roadway `VR`, etc
+
+* **Ego action:** What Ego will be doing in the scenario
+<br>Straight `STR`, left `L`, right `R`, u-turn `U`, etc
+
+* **other actors:** The other actors in the scenario: actor's starting > ending positions (if applicable): actor actions (if applicable).
+<br>`actor:start>end:action`
+<br>There can be multiple actors in a scenario, and if that is the case, additional actors will be added to the end of the scenario ID. The sort order of actors (if applicable) is determined by the order that Ego encounters the actors.  
+<br>**actor:** car `CAR`, bus `BUS`, bicycle `BIKE`, motorcycle `M`, golf cart `GC`, pedestrian `PED`, none `XX`, etc <br>
+**start/end positions:** North `N`, East `E`, South `S`, West `W`, static in lane `St`, double parked `DP`, parked on roadside `Pa`, driveway `Dr`, etc <br>
+**action:** `01`, `02`, `03`, etc. These "action" options are only used if the actor's action is out of the ordinary or isn't obvious, and they do not carry over between scenario categories. For example, 01 for the CF scenarios (sudden stop of a lead vehicle) translates to a different action than 01 for the I scenarios (Ego has right of way at stop sign). The action IDs key will be at the top of each scenario category page.
+
+Other ID options will be added as scenarios are added.
+
+## Parameterization
+
+Simulation allows us to take a single scenario and change the value of key variables. This allows to quickly produce a comprehensive suite of testing scenarios.
+
+In most of our scenarios, speed and/or distance of Ego and actors are parameterized.
+
 ## Behavioral Competencies
 
-Across the industry, lots of amazing work has already been done in defining standardized behavioral competencies for the safe operation of an AV. A subset of these competencies act as the foundation of OAS and are gathered from various public agencies and industry leaders. 
+Across the industry, amazing work has already been done in defining standardized behavioral competencies for the safe operation of an AV. A subset of these competencies act as the foundation of OAS and are gathered from various public agencies and industry leaders.
 
 Examples of these competencies include:
 

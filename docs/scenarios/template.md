@@ -1,13 +1,13 @@
 # Scenario Template
 
 
-:::warning Alpha
+:::warning ALPHA
 Work In Progress
 :::
 
 ``` md
 ## Short title of scenario
-**OAS-AA-##**
+**`road segments`-`lanes`-`stop signs`-`scenario category`-`Ego action`-`other actors`**
 
 Sentence description of scenario
 
@@ -23,7 +23,7 @@ The following is an example
 :::
 
 ## Ex: Pedestrian already in crosswalk
-**OAS-CW-02**
+**2-2-XX-CW-STR-PED**
 
 Ego approaches crosswalk with a pedestrian in the crosswalk
 

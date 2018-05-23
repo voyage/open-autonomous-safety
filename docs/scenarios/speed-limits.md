@@ -1,13 +1,17 @@
 # Speed Limits
 
-:::warning Alpha
+:::warning ALPHA
 Work In Progress
 :::
 
 [[toc]]
 
+:::tip Action IDs
+**01**: Speed limit changes
+:::
+
 ## Single speed zone
-**OAS-SL-01**
+**2-1-XX-SL-STR-XX**
 
 Ego in 20 mph speed zone.
 
@@ -16,9 +20,9 @@ Ego in 20 mph speed zone.
 | A    | ![SL-01](./images/SL-01.png) | **Scenario** <br> Ego in 20 mph speed zone. <br><br> **Expected Result** <br> Ego doesn't exceed 20 mph. |
 
 ## Speed zone transition
-**OAS-SL-02**
+**2-1-XX-SL-STR-XX:01**
 
-Ego moves from 20 moh speed zone to 15 MPH speed zone.
+Ego moves from 20 mph speed zone to 15 MPH speed zone.
 
 |      |     |     |
 | :--: | --- | --- |

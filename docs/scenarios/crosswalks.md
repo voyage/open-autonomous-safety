@@ -7,19 +7,24 @@ Work In Progress
 
 [[toc]]
 
+:::tip Action IDs
+**01**: Actor's path will intersect with Ego's crosswalk <br>
+**02**: Actor's path will not intersect with Ego's crosswalk <br>
+**03**: Static actor in crosswalk
+:::
 
 ## Without pedestrian
-**OAS-CW-01**
+**2-2-XX-CW-STR-XX**
 
 Ego approaches crosswalk with no pedestrian
 
 |    |                                    |          |
 | -- | ---------------------------------- | -------- |
-|  A  | ![Crosswalk without a pedestrian](./images/OAS-CW-01.png) | **Scenario** <br> Ego approaches a crosswalk. There is no pedestrian. <br><br> **Expected Result** <br> Ego reduces speed by 25 percent and proceeds through the crosswalk.  |
+|  A  | ![Crosswalk without a pedestrian](./images/OAS-CW-01.png) | **Scenario** <br> Ego approaches a crosswalk. There is no pedestrian. <br><br> **Expected Result** <br> Ego proceeds through the crosswalk.  |
 
 
 ## Pedestrian already in crosswalk
-**OAS-CW-02**
+**2-2-XX-CW-STR-PED**
 
 Ego approaches crosswalk with a pedestrian in the crosswalk
 
@@ -31,52 +36,52 @@ Ego approaches crosswalk with a pedestrian in the crosswalk
 
 
 ## Single lane road with pedestrian
-**OAS-CW-03**
+**2-1-XX-CW-STR-PED:N>S:01**
 
 Ego approaches crosswalk on a single lane road with pedestrian
 
 |    |                                    |          |
 | -- | ---------------------------------- | -------- |
-|  A  | ![Single lane with a pedestrian-A](./images/CW-03-A.png) | **Scenario** <br> Ego approaches a crosswalk. Pedestrian waits at crosswalk with intent to cross and starts crossing. <br><br> **Expected Result** <br> Ego comes to a stop in front of the crosswalk and remains stopped. |
+|  A  | ![Single lane with a pedestrian-A](./images/CW-03-A.png) | **Scenario** <br> Ego approaches a crosswalk. Pedestrian's calculated trajectory will be in the crosswalk when Ego is predicted to arrive. <br><br> **Expected Result** <br> Ego comes to a stop in front of the crosswalk and remains stopped. |
 |  B  | ![Single lane with a pedestrian-B](./images/CW-03-B.png) | **Scenario** <br> Pedestrian finishes crossing. <br><br> **Expected Result** <br> Ego proceeds through the crosswalk.  |
 |  C  | ![Single lane with a pedestrian-C](./images/CW-03-C.png) | **Scenario complete 🎉** |
 
 
 ## Undivided double lane road with pedestrian
-**OAS-CW-04**
+**2-2-XX-CW-STR-PED:N>S:01**
 
 Ego approaches crosswalk on an undivided double lane road with pedestrian
 
 |    |                                    |          |
 | -- | ---------------------------------- | -------- |
-|  A  | ![Undivided double lane and a pedestrian-A](./images/CW-04-A.png) | **Scenario** <br> Ego approaches a crosswalk. Pedestrian waits at crosswalk with intent to cross and starts crossing. <br><br> **Expected Result** <br> Ego comes to a stop in front of the crosswalk and remains stopped. |
+|  A  | ![Undivided double lane and a pedestrian-A](./images/CW-04-A.png) | **Scenario** <br> Ego approaches a crosswalk. Pedestrian's calculated trajectory will be in the crosswalk when Ego is predicted to arrive. <br><br> **Expected Result** <br> Ego comes to a stop in front of the crosswalk and remains stopped. |
 |  B  | ![Undivided double lane and a pedestrian-B](./images/CW-04-B.png) | **Scenario** <br> Pedestrian finishes crossing. <br><br> **Expected Result** <br> Ego proceeds through the crosswalk.  |
 |  C  | ![Undivided double lane and a pedestrian-C](./images/CW-04-C.png) | **Scenario complete 🎉** |
 
 
 ## Divided road and pedestrian from right
-**OAS-CW-05**
+**2-2M-XX-CW-STR-PED:S>N:01**
 
 Ego approaches crosswalk on a divided road and a pedestrian approaches from the right
 
 |    |                                    |          |
 | -- | ---------------------------------- | -------- |
-|  A  | ![Divided road and a pedestrian from right-A](./images/CW-05-A.png) | **Scenario** <br> Ego approaches a crosswalk. Pedestrian waits at crosswalk with intent to cross and starts crossing. <br><br> **Expected Result** <br> Ego comes to a stop in front of the crosswalk and remains stopped. |
+|  A  | ![Divided road and a pedestrian from right-A](./images/CW-05-A.png) | **Scenario** <br> Ego approaches a crosswalk. Pedestrian's calculated trajectory will be in the crosswalk when Ego is predicted to arrive. <br><br> **Expected Result** <br> Ego comes to a stop in front of the crosswalk and remains stopped. |
 |  B  | ![Divided road and a pedestrian from right-B](./images/CW-05-B.png) | **Scenario** <br> Pedestrian exits crosswalk in Ego's lane of travel (between the right hand side of the road and the median). <br><br> **Expected Result** <br> Ego proceeds through the crosswalk. |
 |  C  | ![Divided road and a pedestrian from right-C](./images/CW-05-C.png) | **Scenario complete 🎉** |
 
 
 ## Divided road and pedestrian from left
-**OAS-CW-06**
+**2-2M-XX-CW-STR-PED:N>S:02**
 
 Ego approaches crosswalk on a divided road, and a pedestrian approaches from the left and remains left of the median
 
 |    |                                    |          |
 | -- | ---------------------------------- | -------- |
-|  A  | ![Divided road and a pedestrian from left-A](./images/CW-06-A.png) | **Scenario** <br> Ego approaches a crosswalk. Pedestrian waits at crosswalk with intent to cross and starts crossing. <br><br> **Expected Result** <br> Ego proceeds through the crosswalk if the pedestrian remains between left of the median (i.e remains in the crosswalk of the opposing lane).  |
+|  A  | ![Divided road and a pedestrian from left-A](./images/CW-06-A.png) | **Scenario** <br> Ego approaches a crosswalk. Pedestrian starts crossing and remains left of the median. <br><br> **Expected Result** <br> Ego proceeds through the crosswalk if the pedestrian remains between left of the median (i.e remains in the crosswalk of the opposing lane).  |
 |  B  | ![Divided road and a pedestrian from left-B](./images/CW-06-B.png) | **Scenario complete 🎉** |
 
-**OAS-CW-07**
+**2-2M-XX-CW-STR-PED:N>S:01**
 
 Ego approaches crosswalk on a divided road, and a pedestrian approaches from the left and has entered the median or vehicle's lane of traffic
 
@@ -86,7 +91,7 @@ Ego approaches crosswalk on a divided road, and a pedestrian approaches from the
 |  B  | ![Divided road and a pedestrian from left and now in lane-B](./images/CW-07-B.png) | **Scenario** <br> Pedestrian exits crosswalk.  <br><br> **Expected Result** <br> Ego proceeds through the crosswalk.  |
 |  C  | ![Divided road and a pedestrian from left and now in lane-C](./images/CW-07-C.png) | **Scenario complete 🎉** |
 
-**OAS-CW-08**
+**2-2M-XX-CW-STR-PED:03**
 
 Ego approaches crosswalk on a divided road, and a pedestrian approaches from the left and waits in median and gives right of way to Ego
 
@@ -98,7 +103,7 @@ Ego approaches crosswalk on a divided road, and a pedestrian approaches from the
 
 
 ## At multi-way stop
-**OAS-CW-09**
+**4-2-NESW-CW-R-PED:SE>SW**
 
 Ego approaches crosswalk at a 4 way stop and pedestrian is crossing in lane of travel
 
@@ -108,33 +113,32 @@ Ego approaches crosswalk at a 4 way stop and pedestrian is crossing in lane of t
 |  B  | ![4 way stop and pedestrian in lane-B](./images/CW-09-B.png) | **Scenario** <br> Pedestrian exits crosswalk. <br><br> **Expected Result** <br> Ego proceeds
 |  C  | ![4 way stop and pedestrian in lane-C](./images/CW-09-C.png) | **Scenario complete 🎉**  |
 
-**OAS-CW-10**
+**4-2-NESW-CW-STR-PED:SE>SW**
 
 Ego approaches crosswalk at a 4 way stop and pedestrian is not crossing in lane of travel
 
 |    |                                    |          |
 | -- | ---------------------------------- | -------- |
 |  A  | ![4 way stop and pedestrian not in lane-A](./images/CW-10-A.png) | **Scenario** <br> Ego approaches a 4 way stop. Pedestrian is waiting to cross over a crosswalk that does intersect with Ego's path of travel. <br><br> **Expected Result** <br> Ego uses turn signal if appropriate and comes to a stop behind the crosswalk and remains stopped.  |
-|  B  | ![4 way stop and pedestrian not in lane-B](./images/CW-10-B.png) | **Scenario** <br> Pedestrian travels into a crosswalk that does not lie over a road in which Ego intends to proceed. <br><br> **Expected Result** <br> Ego proceeds after a few seconds 
+|  B  | ![4 way stop and pedestrian not in lane-B](./images/CW-10-B.png) | **Scenario** <br> Pedestrian travels into a crosswalk that does not lie over a road in which Ego intends to proceed. <br><br> **Expected Result** <br> Ego proceeds after a few seconds
 |  C  | ![4 way stop and pedestrian not in lane-C](./images/CW-10-C.png) | **Scenario complete 🎉** |
 
-**OAS-CW-11**
+**3-2-NSW-CW-R-PED:NW>SW**
 
 Ego approaches crosswalk at a 3 way stop and pedestrian is crossing in lane of travel
 
 |    |                                    |          |
 | -- | ---------------------------------- | -------- |
 |  A  | ![3 way stop and pedestrian in lane-A](./images/CW-11-A.png) | **Scenario** <br> Ego approaches a 3 way stop. Pedestrian is waiting to cross a crosswalk that intersects with Ego's path of travel. <br><br> **Expected Result** <br> Ego uses turn signal if appropriate and comes to a stop behind the crosswalk and remains stopped.  |
-|  B  | ![3 way stop and pedestrian in lane-B](./images/CW-11-B.png) | **Scenario** <br> Pedestrian exits crosswalk. <br><br> **Expected Result** <br> Ego waits until the pedestrian is physically clear of the crosswalk and then proceeds.  |
+|  B  | ![3 way stop and pedestrian in lane-B](./images/CW-11-B.png) | **Scenario** <br> Pedestrian exits crosswalk. <br><br> **Expected Result** <br> Ego waits until the pedestrian is physically clear of the crosswalk and proceeds.  |
 |  C  | ![3 way stop and pedestrian in lane-C](./images/CW-11-C.png) | **Scenario complete 🎉** |
 
-**OAS-CW-12**
+**3-2-NSW-CW-R-PED:NW>NE**
 
 Ego approaches crosswalk at a 3 way stop and pedestrian is not crossing in lane of travel
 
 |    |                                    |          |
 | -- | ---------------------------------- | -------- |
 |  A  | ![3 way stop and pedestrian not in lane-A](./images/CW-12-A.png) | **Scenario** <br> Ego approaches a 3 way stop. Pedestrian is waiting to cross over a crosswalk that does intersect with Ego's path of travel. <br><br> **Expected Result** <br> Ego uses turn signal if appropriate and comes to a stop behind the crosswalk and remains stopped.  |
-|  B  | ![3 way stop and pedestrian not in lane-B](./images/CW-12-B.png) | **Scenario** <br> Pedestrian travels into a crosswalk that does not lie over a road in which Ego intends to proceed. <br><br> **Expected Result** <br> Ego proceeds after a few seconds 
+|  B  | ![3 way stop and pedestrian not in lane-B](./images/CW-12-B.png) | **Scenario** <br> Pedestrian travels into a crosswalk that does not lie over a road in which Ego intends to proceed. <br><br> **Expected Result** <br> Ego proceeds after a few seconds
 |  C  | ![3 way stop and pedestrian not in lane-C](./images/CW-12-C.png) | **Scenario complete 🎉**  |
-
