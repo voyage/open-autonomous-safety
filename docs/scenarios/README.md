@@ -5,8 +5,7 @@ Work In Progress
 :::
 
 # Overview
-This document outlines scenarios that an Autonomous Vehicle (AV) might encounter while operating on public or private roads. Each scenario defines detailed behavioral requirements that must be followed by an AV in order to maintain the highest standard of safety at all times. Here at Voyage, we refer to our Autonomous vehicle as the "Ego" vehicle.
-
+This document outlines scenarios that an Autonomous Vehicle (AV) might encounter while operating on public or private roads. Each scenario defines detailed behavioral requirements that must be followed by an AV in order to maintain the highest standard of safety at all times. The Autonomous vehicle is referred to as"Ego".
 We divide our scenarios into behavioral sections. These sections enumerate safety critical scenarios that require testing to ensure that an AV can safely navigate its surrounding environment.
 
 ## OAS Scenarios
@@ -21,7 +20,7 @@ After the expected result, proceed to next step.
 
 ## Scenario IDs
 
-Every scenario is assigned a unique ID.
+Scenarios are assigned a unique ID.
 
 **`road segments`-`lanes`-`stop signs`-`scenario category`-`Ego action`-`other actors`**
 
@@ -29,16 +28,16 @@ Every scenario is assigned a unique ID.
 `2-2-XX-CW-STR-PED:N>S:01`
 :::
 
-* **road segments:** The # of road segments (arms)
+* **road segments:** The number of road segments (arms)
 <br>2-way `2`, 3-way `3`, 4-way `4`, n/a `XX`, etc
 
-* **\# of lanes:** The # of total lanes and if there's a median/island
+* **\# of lanes:** The number of total lanes and if there's a median/island
 <br>`1`, `2`, `3`, `4`, 2 lanes + median `2M`, 4 lanes + median `4M`, 1 lane + island in center `1I` etc
 
 * **stop signs:** Based on a bird's eye view of the scenario, where are the stop signs.
 <br>North `N`, East `E`, South `S`, West `W`, none `XX`, etc
 
-* **scenario category:** The high-level category
+* **scenario category:** The category
 <br>Car following `CF`, crosswalks `CW`, cul-de-sacs `CDS`, intersections `I`, pedestrians in road `PIR`, reversing vehicles `RV`, speed limits `SL`, vehicles in roadway `VR`, etc
 
 * **Ego action:** What Ego will be doing in the scenario
@@ -99,4 +98,4 @@ Examples of these competencies include:
 * Navigate cul-de-sacs (both with and without center island)
 * Navigate through narrow streets
 * Navigate parking lots
-* Detect and respond to golf carts operating in dedicated side lanes (or bike lanes)
+* Detect and respond to golf carts operating in dedicated lanes (or bike lanes)
